@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>소프트웨어공학 2팀</title>
+   <link rel="stylesheet" type="text/css" href="roadmap.css">
+</head>
+<body>
+    <div class="row">
+        <div class="left">
+            <h1>길찾기</h1>
+            <input type="text" id="start" placeholder="출발지 키워드">
+            <input type="text" id="end" placeholder="목적지 키워드">
+            <button onclick="searchMarkers()">검색</button>
+        </div>
+        <div class="right">
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <div class="custom_zoomcontrol radius_border"> 
+      <span onclick="zoomIn()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png" alt="확대"></span>  
+      <span onclick="zoomOut()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png" alt="축소"></span>
+    </div>
+
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b5b61e0156f46c99a8a00da3640b4062&libraries=services"></script>
+    <script type="text/javascript" src="roadmap.js"></script>
+</body>
+</html>
